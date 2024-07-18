@@ -3,13 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>人工言語生成ツール</title>
+  <title>単語生成ツール</title>
   <script src="data.js"></script>
   <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>人工言語生成ツール</h1>
-  <div id="wordList"></div>
-  <button id="downloadButton">JSONファイルをダウンロード</button>
+  <h1>単語生成ツール</h1>
+  <label for="length">文字数:</label>
+  <input type="number" id="length" value="5"><br>
+
+  <label for="syllables">音節数:</label>
+  <input type="number" id="syllables" value="3"><br>
+
+  <label for="vowels">母音:</label>
+  <input type="text" id="vowels" value="a,e,i,o,u"><br>
+
+  <label for="consonants">子音:</label>
+  <input type="text" id="consonants" value="k,s,t,n,h,m,y,r,w"><br>
+
+  <button id="generateButton">単語を生成</button>
+  <div id="result"></div>
 </body>
 </html>
